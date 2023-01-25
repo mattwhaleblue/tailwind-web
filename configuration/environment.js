@@ -31,7 +31,7 @@ module.exports = {
   site_description: "Starter tailwind template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
   
   // Source file for favicon generation.
-  favicon: path.join(ROOT, '/src/images/whale-logo.png'),
+  favicon: path.join(ROOT, '/src/images/whale-favicon-logo.png'),
   
   // The viewport meta tag added to your HTML page's <head> tag
   viewport: 'width=device-width,initial-scale=1',
