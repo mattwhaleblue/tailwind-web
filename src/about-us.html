@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>About us | Bright</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Site header and hero section -->
+    <div class='bg-purple-25'>
+
+      <!-- Top header contact information and navbar -->
+      <header>
+        <include src="./components/contact-header.html"/>
+        <include src="./components/navigation.html"/>
+      </header>
+
+      <!-- Hero section -->
+      <include src="./components/about-hero.html"/>
+    </div>
+    
+    <!-- Gradient Transition -->
+    <div class='w-full h-32 sm:h-40 lg:h-44 bg-gradient-to-b from-purple-25 to-white'></div>
+
+    <!-- About blocks -->
+    <include src="./components/about-blocks.html"/>
+
+    <!-- School stats -->
+    <include src="./components/stats.html"/>
+
+    <!-- Section separator-->
+    <div class='px-4 bg-purple-600 sm:px-6 lg:px-8'>
+      <hr class='max-w-screen-xl mx-auto border-purple-500'>
+    </div>
+    
+    <!-- Team section -->
+    <include src="./components/team.html"/>
+
+    <!-- School values -->
+    <include src="./components/values.html"/>
+
+    <!-- Call to action -->
+    <include src="./components/cta.html"/>
+
+    <!-- Footer -->
+    <include src="./components/footer.html"/>
+    
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gallery | Bright</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.2.0/css/lightgallery.css">
+  </head>
+  <body>
+
+    <!-- Site header and hero section -->
+    <div class='bg-purple-25'>
+
+      <!-- Top header contact information and navbar -->
+      <header>
+        <include src="./components/contact-header.html"/>
+        <include src="./components/navigation.html"/>
+      </header>
+
+      <!-- Hero section -->
+      <include src="./components/gallery-hero.html"/>
+    </div>
+    
+    <!-- Gallery -->
+    <include src="./components/gallery-grid.html"/>
+
+    <!-- Call to action -->
+    <include src="./components/cta.html"/>
+
+    <!-- Footer -->
+    <include src="./components/footer.html"/>
+    
+    <!-- Lightgallery is a customizable, modular, responsive, lightbox gallery plugin.  https://github.com/sachinchoolur/lightGallery -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.2.0/lightgallery.umd.min.js"></script>
+    <script type="text/javascript">
+      let galleryGrid = document.getElementById('gallery-grid');
+      let heroGallery = document.getElementById('hero-gallery');
+
+      lightGallery(heroGallery, {
+        selector: 'img',
+        speed: 500,
+      })
+
+      lightGallery(galleryGrid, {
+        selector: 'li',
+        speed: 500,
+      })
+      
+    </script>
+  
+  </body>
+</html>
