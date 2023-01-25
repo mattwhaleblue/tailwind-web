@@ -51,7 +51,7 @@ module.exports = {
           }
         },
         generator: {
-          filename: 'images/[name][ext]'
+          filename: 'public/images/[name][ext]'
         },
       },
       {
@@ -63,7 +63,7 @@ module.exports = {
           }
         },
         generator: {
-          filename: 'fonts/[hash][ext][query]'
+          filename: 'public/fonts/[hash][ext][query]'
         },
       },
       {
@@ -107,7 +107,7 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: environment.favicon,
-      prefix: 'images/favicons/',
+      prefix: 'public/images/favicons/',
       favicons: {
         appName: environment.site_name,
         appDescription: environment.site_description,
