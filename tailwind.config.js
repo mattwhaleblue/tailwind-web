@@ -1,4 +1,4 @@
-const purple =  {
+const purple = {
   900: '#160041',
   800: '#18083A',
   700: '#2C1854',
@@ -10,7 +10,7 @@ const purple =  {
   100: '#e0d7fc',
   50: '#f0ebfe',
   25: '#F4F0FC',
-}
+};
 const yellow = {
   900: '#FAAF19',
   800: '#FDBE3F',
@@ -22,13 +22,10 @@ const yellow = {
   200: '#fef3da',
   100: '#fef7e7',
   50: '#fffaf6',
-}
+};
 
 module.exports = {
-  content: [
-    './src/**/*.html',
-    './src/**/*.js',
-  ],
+  content: ['./src/**/*.html', './src/**/*.js'],
 
   theme: {
     extend: {
@@ -72,16 +69,16 @@ module.exports = {
       },
 
       scale: {
-        '30': '0.3',
-        '80': '0.8',
-        '130': '1.3',
-        '135': '1.35',
+        30: '0.3',
+        80: '0.8',
+        130: '1.3',
+        135: '1.35',
       },
 
       rotate: {
         '-8': '-8deg',
-        '4': '4deg',
-        '8': '8deg',
+        4: '4deg',
+        8: '8deg',
       },
 
       animation: {
@@ -100,18 +97,18 @@ module.exports = {
         'horizontal-bounce': {
           '50%': {
             transform: 'translateX(25%)',
-            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
           },
 
           '0%, 100%': {
             transform: 'translateX(0)',
-            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)'
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
           },
         },
       },
 
       typography: (theme) => ({
-        'lg': {
+        lg: {
           css: {
             h1: {
               fontSize: theme('fontSize.5xl'),
@@ -126,7 +123,7 @@ module.exports = {
           },
         },
 
-        'xl': {
+        xl: {
           css: {
             h1: {
               fontSize: theme('fontSize.6xl'),
@@ -211,7 +208,7 @@ module.exports = {
             {
               color: purple['25'],
               strong: {
-                color: "#fff",
+                color: '#fff',
               },
               a: {
                 color: '#fff',
@@ -229,36 +226,36 @@ module.exports = {
                 borderColor: purple['50'],
               },
               blockquote: {
-                color: "#fff",
+                color: '#fff',
                 borderLeftColor: purple['100'],
               },
               h1: {
-                color: "#fff",
+                color: '#fff',
               },
               h2: {
-                color: "#fff",
+                color: '#fff',
               },
               h3: {
-                color: "#fff",
+                color: '#fff',
               },
               h4: {
-                color: "#fff",
+                color: '#fff',
               },
               'figure figcaption': {
                 color: purple['50'],
               },
               code: {
-                color: "#fff",
+                color: '#fff',
               },
               'a code': {
                 color: purple['400'],
               },
               pre: {
-                color: "#fff",
+                color: '#fff',
                 backgroundColor: purple['800'],
               },
               thead: {
-                color: "#fff",
+                color: '#fff',
                 borderBottomColor: purple['100'],
               },
               'tbody tr': {
@@ -271,8 +268,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'), 
+    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
   ],
-}
+};
