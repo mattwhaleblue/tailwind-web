@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0GVM5ZS4TT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0GVM5ZS4TT");
+    </script>
+    <meta charset="UTF-8" />
+    <title>About us | Bright</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Site header and hero section -->
+    <div class="bg-purple-25">
+      <!-- Top header contact information and navbar -->
+      <header>
+        <include src="./components/contact-header.html" />
+        <include src="./components/navigation.html" />
+      </header>
+
+      <!-- Hero section -->
+      
+      <include src="./components/thank-you.html" />
+    </div>
+
+    <!-- Gradient Transition -->
+    <div
+      class="w-full h-32 sm:h-40 lg:h-44 bg-gradient-to-b from-purple-25 to-white"
+    ></div>
+
+    <!-- Footer -->
+    <include src="./components/footer.html" />
+  </body>
+</html>
