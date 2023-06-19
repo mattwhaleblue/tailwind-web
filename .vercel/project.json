@@ -1,10 +1,10 @@
 {
   "projectId": "prj_WzJDeErnYow5FGNvGjPwJxH579rg",
   "orgId": "team_Er1PVgFHDQtxYta21I5YKArF",
-  "redirects":[
+  "rewrites": [
     {
-       "source":"/private-debt-london",
-       "destination":"/private-debt-london.html"
+      "source": "/private-debt-london",
+      "destination": "/private-debt-london.html"
     }
- ]
+  ]
 }
