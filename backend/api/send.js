@@ -12,11 +12,11 @@ export default async function handler(request, response) {
       html: '<p>Congrats on sending your <strong>first email again</strong>!</p>',
     });
 
-    console.log('result===>', result);
+    console.log('Result===>', result);
 
     response.status(200).json({ success: true });
   } catch (error) {
-    console.error("error===>", error);
+    console.error("Error sending email===>", error);
     response.status(501).json({ success: false });
   }
 }
